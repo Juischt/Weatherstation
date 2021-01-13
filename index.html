@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <title>ESP32 Weatherstation</title>
+        <link rel="icon" href="sun.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--<p id="title">
+            <img src="esp32.png" id="esp">
+            <h1>ESP32</h1>
+            <br>
+            <h1>Wetterstation</h1> 
+            <img src="sun.png" id="sun">
+        </p>-->
+
+        <div id="grid-container">
+            <!--<div class="grid-item"><img src="esp32.png" class="images"></div>-->
+            <div class="grid-item"><h1>Esp32</h1></div>
+            <!--<div class="grid-item"><img src="bmp.jpg" class="images"></div>-->
+
+            <!--<div class="grid-item"><img src="dht.png" class="images"></div>-->
+            <div class="grid-item"><h1>Weatherstation</h1></div>
+            <!--<div class="grid-item"><img src="sun.png" class="images"></div>-->
+        </div>
+        <p>
+            <p class="subtitle">Aktuell</p>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/widgets/257869"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/widgets/257870"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/widgets/257871"></iframe>
+            <br>
+            <p class="subtitle">Letzte Stunde</p>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/1?bgcolor=%23000000&color=%23e63030&dynamic=true&results=60&title=Temperature&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/2?bgcolor=%23000000&color=%234163f6&dynamic=true&results=60&title=Humidity&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/3?bgcolor=%23000000&color=%2371f571&dynamic=true&results=60&title=Pressure&type=line"></iframe>
+            <br>
+            <!--<iframe id="test" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1278536/widgets/257869"></iframe>-->
+            <p class="subtitle">Letzter Tag</p>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/1?bgcolor=%23000000&color=%23d62020&dynamic=true&results=1440&title=Temperature&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/2?bgcolor=%23000000&color=%234163f6&dynamic=true&results=1440&title=Humidity&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/3?bgcolor=%23000000&color=%2371f571&dynamic=true&results=1440&title=Pressure&type=line"></iframe>
+            <br>
+            <p class="subtitle">Letzte Woche</p>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/1?bgcolor=%23000000&color=%23d62020&dynamic=true&results=10080&title=Temperature&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/2?bgcolor=%23000000&color=%234163f6&dynamic=true&results=10080&title=Humidity&type=line"></iframe>
+            <iframe width="450" height="260" class="charts" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1278536/charts/3?bgcolor=%23000000&color=%2371f571&dynamic=true&results=10080&title=Pressure&type=line"></iframe>
+        </p>
+        <!--<p id="google-sheet">
+            <a href="https://docs.google.com/spreadsheets/d/15H6Ksqgt0mtqNeITFJb3VW4jecvWHx5LtV7L3dRC9to/edit?usp=sharing">Logs</a>
+        </p>-->
+        <script src="script.js"></script>
+    </body>
+</html>
